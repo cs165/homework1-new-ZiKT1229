@@ -37,7 +37,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  border: white 1px thick;
+  border: 1px solid white;
 }
 
 #proflie-p {
