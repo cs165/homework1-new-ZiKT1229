@@ -1,3 +1,106 @@
 /**
  TODO(you): Add CSS for the list that you create yourself!
 */
+body {
+  margin: 0;
+  background: wheat;
+}
+
+.header {
+  width: 100%;
+  height: 500px;
+  background: url(../images/header-cat.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.profile {
+  margin: 0 0 50px 50px;
+  background: white url(../images/man.png);
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 100%;
+  border: 5px ghostwhite solid;
+}
+
+.profile::before {
+  content: '鄭昆庭';
+  position: absolute;
+  top: 450px;
+  color: white;
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
+}
+
+.profile::after {
+  content: 'Love and cat';
+  position: absolute;
+  top: 470px;
+  color: white;
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
+}
+
+h1 {
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1::before,
+h1::after {
+  content: url(../images/cat-icon.png);
+}
+
+.cat {
+  background: white;
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  border: 32px solid black;
+  border-image: url(../images/cat-icon.png) 32 round;
+  transition: box-shadow .5s;
+  border-radius: 10px;
+}
+
+.cat:hover {
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.cat:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.cat-image {
+  width: 40%;
+  height: 40%;
+}
+
+.cat-data {
+  width: 50%;
+  margin: auto;
+}
+
+.cat-name {
+  display: block;
+  text-decoration: none;
+  color: salmon;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cat-name:hover {
+  color: sandybrown;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: ghostwhite;
+  text-align: center;
+}
