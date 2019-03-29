@@ -59,17 +59,18 @@ h1::after {
 .cat {
   background: white;
   margin: 50px auto;
-  width: 80%;
+  width: 75%;
   display: flex;
   flex-direction: row;
   border: 32px solid black;
   border-image: url(../images/cat-icon.png) 32 round;
-  transition: box-shadow .5s;
+  transition: all .5s;
   border-radius: 10px;
 }
 
 .cat:hover {
   box-shadow: 10px 10px 8px #888888;
+  transform: scale(1.2);
 }
 
 .cat:nth-child(2n) {
